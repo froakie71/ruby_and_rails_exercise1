@@ -139,7 +139,7 @@ GEM
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.1.7)
-    rack-mini-profiler (2.3.4)
+    rack-mini-profiler (3.3.1)
       rack (>= 1.2.0)
     rack-session (2.0.0)
       rack (>= 3.0.0)
@@ -229,7 +229,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen (~> 3.3)
   puma (~> 6.0)
-  rack-mini-profiler (~> 2.0)
+  rack-mini-profiler (~> 3.3)
   rails (~> 7.2.1)
   spring
   sprockets-rails

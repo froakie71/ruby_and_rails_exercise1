@@ -1,0 +1,18 @@
+<h1>Todo List</h1>
+
+<% if @todos.any? %>
+  <ul>
+    <% @todos.each do |todo| %>
+      <li>
+        <%= todo[:title] %>
+        <%= button_to 'Delete', todo_path(todo[:id]), method: :delete, class: 'btn btn-danger', form: { style: 'display:inline-block;' } %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No todos yet!</p>
+<% end %>
+
+<div class="new-todo">
+  <%= link_to 'New Todo', new_todo_path, class: 'btn btn-primary' %>
+</div>
